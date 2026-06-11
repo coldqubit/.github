@@ -47,26 +47,27 @@
       <h1>coldqubit</h1>
       <p class="tagline">The missing <span class="c">layers</span> between a quantum circuit and production.</p>
 
+      <!-- values are static fallbacks; js/site.js re-parses them from GitHub -->
       <div class="stats">
         <div class="stat">
           <div class="l">Active projects</div>
-          <div class="v"><span class="tick"></span>01</div>
-          <div class="s">shotgate · more planned</div>
+          <div class="v"><span class="tick"></span><span id="s-projects">01</span></div>
+          <div class="s" id="s-projects-sub">shotgate · more planned</div>
         </div>
         <div class="stat">
           <div class="l">Maintainers</div>
-          <div class="v">1</div>
-          <div class="s">co-maintainers welcome</div>
+          <div class="v" id="s-maintainers">1</div>
+          <div class="s">from MAINTAINERS.md · co-maintainers welcome</div>
         </div>
         <div class="stat">
           <div class="l">License</div>
-          <div class="v">Apache-2.0</div>
+          <div class="v" id="s-license">Apache-2.0</div>
           <div class="s">permissive, OSI-approved</div>
         </div>
         <div class="stat">
           <div class="l">Stage</div>
-          <div class="v">alpha</div>
-          <div class="s">structured to grow</div>
+          <div class="v" id="s-stage">alpha</div>
+          <div class="s" id="s-stage-sub">latest release v0.2.2</div>
         </div>
       </div>
     </div>
@@ -77,7 +78,7 @@
       <div class="sec-head">
         <span class="kicker"><span class="tick"></span>Projects under coldqubit</span>
         <h2>One home, growing into an ecosystem.</h2>
-        <p>Every project inherits the shared system, palette, type, and the tile-based mark language, and adds a single glyph and accent. Today there is one.</p>
+        <p>Independent tools that share one standard: declarative workflows, container-first reproducibility, statistical rigor, and honest status reporting. Today there is one, and room for more.</p>
       </div>
 
       <div class="projects">
@@ -92,12 +93,12 @@
               <span class="chip alpha"><span class="dot"></span>alpha</span>
             </div>
           </div>
-          <p class="proj-desc">CI/CD quality gates for quantum circuits. Statistically validate the probabilistic output of quantum programs across simulators and real QPUs, as declarative YAML, with drop-in exit-code gating.</p>
+          <p class="proj-desc">CI/CD quality gates for quantum circuits. Statistically validate the probabilistic output of quantum programs across simulators and real QPUs, as declarative YAML, with drop-in exit-code gating. Validated on real hardware: ibm_fez, Bell/GHZ/Grover at 4096 shots.</p>
 
           <div class="field-label">Backends</div>
           <div class="row">
             <span class="chip working"><span class="dot"></span>local-aer</span>
-            <span class="chip alpha"><span class="dot"></span>ibm</span>
+            <span class="chip working"><span class="dot"></span>ibm</span>
             <span class="chip planned"><span class="dot"></span>braket</span>
           </div>
 
@@ -106,7 +107,7 @@
           <div class="proj-links">
             <a class="plink" href="https://shotgate.coldqubit.org">Site <span class="arr">→</span></a>
             <a class="plink" href="https://github.com/coldqubit/shotgate">GitHub <span class="arr">→</span></a>
-            <a class="plink" href="https://github.com/coldqubit/shotgate/tree/main/docs">Docs <span class="arr">→</span></a>
+            <a class="plink" href="https://shotgate.coldqubit.org/docs/">Docs <span class="arr">→</span></a>
           </div>
         </div>
 
@@ -118,9 +119,9 @@
               <div class="proj-role">planned</div>
             </div>
           </div>
-          <p class="proj-desc">Reuses the shared tile and type, adds one new glyph and accent. The system is built to grow into an ecosystem, not a one-off. Proposals start as an issue under the project home.</p>
+          <p class="proj-desc">The gap between a runnable circuit and production is wider than one tool: scheduling, observability, policy, cost. If you want to build one of those layers in the open, start the conversation with an issue.</p>
           <div class="proj-links">
-            <a class="plink" href="https://github.com/coldqubit">Watch the home <span class="arr">→</span></a>
+            <a class="plink" href="https://github.com/coldqubit/shotgate/issues">Propose a project <span class="arr">→</span></a>
           </div>
         </div>
       </div>
@@ -147,9 +148,9 @@
         </div>
 
         <div class="panel" id="system">
-          <span class="kicker"><span class="tick"></span>Shared design system</span>
-          <h3>coldqubit owns the system; products inherit it.</h3>
-          <p>One palette, one type family, one tile-based mark language. The violet tile is the shared base; each product adds a glyph and owns exactly one accent. Cyan is the home's; shotgate runs solar coral.</p>
+          <span class="kicker"><span class="tick"></span>One recognizable system</span>
+          <h3>You should always know where you are.</h3>
+          <p>Every coldqubit surface, from CLI output to docs to this page, speaks the same language: terminal-native type, green/red PASS/FAIL semantics, one accent per project. Cyan means you are at the home; solar coral means shotgate.</p>
           <div class="mark-row">
             <img src="assets/coldqubit-logomark.svg" alt="coldqubit mark">
             <div>

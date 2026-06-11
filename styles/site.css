@@ -119,11 +119,27 @@ a { color: inherit; text-decoration: none; }
 @media (max-width: 980px) {
   .stats { grid-template-columns: repeat(2, 1fr); }
   .projects, .lower { grid-template-columns: 1fr; }
-  .topnav-links { display: none; }
+}
+
+/* mobile nav: never hide the links; they become a scrollable mono row */
+@media (max-width: 980px) {
+  .topnav-inner { flex-wrap: wrap; height: auto; padding-top: 12px; column-gap: 16px; }
+  .topnav-brand { order: 1; }
+  .gh-link { order: 2; margin-left: auto; }
+  .topnav-links { order: 3; flex-basis: 100%; margin-left: 0; gap: 18px; font-size: 13px; padding: 10px 2px 12px; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .topnav-links::-webkit-scrollbar { display: none; }
+  :is(.section, .panel)[id] { scroll-margin-top: 112px; }
 }
 
 @media (max-width: 640px) {
   .wrap { padding: 0 22px; }
-  .hero-inner { padding-left: 22px; padding-right: 22px; }
+  .hero-inner { padding-left: 22px; padding-right: 22px; padding-top: 46px; }
   .kicker { white-space: normal; }
+  .section { padding: 44px 0; }
+  .stats { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .stat { padding: 14px 16px; }
+  .stat .v { font-size: 22px; }
+  .panel { padding: 22px 20px; }
+  .proj { padding: 20px 18px 18px; }
+  .foot-inner .right { margin-left: 0; }
 }
