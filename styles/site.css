@@ -1,0 +1,129 @@
+/* ============================================================================
+   coldqubit.org · surface styles
+   ----------------------------------------------------------------------------
+   Page-level layout for the coldqubit project-home surface (cyan-forward).
+   Tokens and canonical component classes come from styles.css (fonts +
+   colors_and_type + components); nothing here re-implements them.
+   ============================================================================ */
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+html, body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--font-sans); -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-decoration: none; }
+/* anchor-nav targets clear the sticky topnav */
+:is(.section, .panel)[id] { scroll-margin-top: 80px; }
+.wrap { max-width: 1180px; margin: 0 auto; padding: 0 40px; }
+
+/* kicker: canonical (components.css), wider tick on this surface */
+.kicker { gap: 12px; }
+.kicker .tick { width: 26px; }
+
+/* top nav: canonical .topnav (components.css); height bump on this surface */
+.topnav-inner { height: 68px; }
+
+.gh-link { display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-mono); font-size: 14px; color: var(--text-secondary); }
+.gh-link:hover { color: var(--text); }
+.gh-link svg { width: 17px; height: 17px; }
+
+/* hero */
+.hero { position: relative; overflow: hidden; border-bottom: 1px solid var(--line); }
+.hero .lattice { position: absolute; inset: 0; background-image: var(--dot-grid); background-size: var(--dot-size) var(--dot-size); -webkit-mask-image: radial-gradient(120% 130% at 92% -10%, #000 0%, transparent 60%); mask-image: radial-gradient(120% 130% at 92% -10%, #000 0%, transparent 60%); }
+.hero .glow { position: absolute; top: -240px; right: -160px; width: 680px; height: 680px; background: radial-gradient(circle, var(--cyan-glow) 0%, transparent 62%); pointer-events: none; }
+/* .hero-inner shares its element with .wrap; keep the 40px side padding */
+.hero-inner { position: relative; padding: 64px 40px 54px; }
+.hero h1 { font: var(--text-display); font-family: var(--font-display); letter-spacing: -0.04em; margin: 18px 0 0; }
+.hero .tagline { font: var(--text-lead); color: var(--fg-2); margin: 16px 0 0; max-width: 46ch; text-wrap: balance; }
+.hero .tagline .c { color: var(--cyan-300); }
+
+/* stat row */
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 38px; }
+.stat { background: var(--bg-elevated); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 18px 20px; }
+.stat .l { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--fg-4); }
+.stat .v { font-family: var(--font-display); font-weight: 600; font-size: 30px; color: var(--fg-1); margin-top: 8px; letter-spacing: -0.02em; }
+.stat .s { font-family: var(--font-mono); font-size: 12.5px; color: var(--fg-3); margin-top: 6px; }
+.stat .v .tick { display: inline-block; width: 9px; height: 9px; border-radius: 2px; background: var(--cyan-400); margin-right: 9px; vertical-align: middle; }
+
+/* section */
+.section { padding: 56px 0; }
+.section.alt { background: var(--bg-sunken); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.sec-head { margin-bottom: 26px; }
+.sec-head h2 { font: var(--text-h2); font-family: var(--font-display); letter-spacing: -0.02em; margin: 12px 0 0; }
+.sec-head p { font: var(--text-body); color: var(--fg-3); margin: 8px 0 0; max-width: 64ch; }
+
+/* projects grid */
+.projects { display: grid; grid-template-columns: 1.55fr 1fr; gap: 16px; }
+.proj { background: var(--bg-elevated); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 26px 26px 22px; display: flex; flex-direction: column; transition: border-color var(--dur) var(--ease-out), box-shadow var(--dur) var(--ease-out); }
+.proj:hover { border-color: var(--ink-500); box-shadow: var(--shadow-md); }
+.proj-top { display: flex; align-items: center; gap: 14px; }
+.proj-top img { width: 46px; height: 46px; }
+.proj-name { font: var(--text-h3); font-family: var(--font-display); color: var(--fg-1); letter-spacing: -0.01em; }
+.proj-role { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--fg-4); margin-top: 3px; }
+.proj-status { margin-left: auto; }
+.proj-desc { font: var(--text-body-sm); color: var(--fg-2); margin: 18px 0 0; }
+
+.row { display: flex; align-items: center; gap: 9px; flex-wrap: wrap; }
+.field-label { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--fg-4); margin: 20px 0 10px; }
+
+/* chips: canonical (components.css .chip.working/.alpha/.planned) */
+
+.exit { font-family: var(--font-mono); font-size: 12.5px; color: var(--fg-3); margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--line); }
+.exit b { color: var(--fg-2); font-weight: 600; }
+.exit .sep { color: var(--ink-400); margin: 0 8px; }
+
+.proj-links { display: flex; gap: 10px; margin-top: 18px; }
+/* .plink: canonical (components.css), reads the project accent */
+
+/* planned project card */
+.proj.planned-card { border-style: dashed; border-color: var(--ink-500); background: transparent; justify-content: center; align-items: flex-start; }
+.planned-tile { width: 46px; height: 46px; border-radius: 13px; border: 1.5px dashed var(--ink-500); display: flex; align-items: center; justify-content: center; color: var(--fg-4); font-size: 26px; font-family: var(--font-display); }
+.proj.planned-card .proj-name { color: var(--fg-3); }
+.proj.planned-card .proj-desc { color: var(--fg-3); }
+
+/* lower two-column */
+.lower { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.panel { background: var(--bg-elevated); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 28px; }
+.panel h3 { font: var(--text-h4); font-family: var(--font-display); margin: 12px 0 0; color: var(--fg-1); }
+.panel p { font: var(--text-body-sm); color: var(--fg-2); margin: 12px 0 0; }
+.glist { list-style: none; margin: 18px 0 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+.glist li { display: flex; gap: 12px; font: var(--text-body-sm); color: var(--fg-2); }
+.glist .arr { color: var(--cyan-400); font-family: var(--font-mono); flex-shrink: 0; }
+.panel-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+
+/* marks rows */
+.mark-row { display: flex; align-items: center; gap: 14px; padding: 14px 0; border-top: 1px solid var(--line); }
+.mark-row:first-of-type { margin-top: 18px; }
+.mark-row img { width: 40px; height: 40px; }
+.mark-row .mn { font-family: var(--font-display); font-size: 17px; color: var(--fg-1); }
+.mark-row .md { font-family: var(--font-mono); font-size: 11.5px; color: var(--fg-3); margin-top: 2px; }
+.mark-row .mr { margin-left: auto; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; }
+.mr.cyan { color: var(--cyan-300); }
+.mr.coral { color: var(--coral-300); }
+
+/* footer */
+.foot { border-top: 1px solid var(--line); }
+.foot-inner { display: flex; align-items: center; gap: 16px; padding: 26px 0; flex-wrap: wrap; font-family: var(--font-mono); font-size: 13px; color: var(--fg-3); }
+.foot-inner .right { margin-left: auto; display: flex; gap: 18px; flex-wrap: wrap; }
+.foot-inner a:hover { color: var(--fg-1); }
+
+/* 404 */
+.nf { min-height: calc(100vh - 68px); display: flex; align-items: center; }
+.nf .terminal-window { width: min(640px, 100%); margin: 0 auto; }
+.nf .terminal-body { min-height: 0; }
+.nf-actions { margin-top: 14px; }
+.nf-actions a { font-family: var(--font-mono); font-size: 13.5px; color: var(--accent); }
+.nf-actions a:hover { text-decoration: underline; }
+
+/* grid children hold mono lines and chip rows: let them shrink */
+.projects > *, .lower > *, .stats > * { min-width: 0; }
+
+@media (max-width: 980px) {
+  .stats { grid-template-columns: repeat(2, 1fr); }
+  .projects, .lower { grid-template-columns: 1fr; }
+  .topnav-links { display: none; }
+}
+
+@media (max-width: 640px) {
+  .wrap { padding: 0 22px; }
+  .hero-inner { padding-left: 22px; padding-right: 22px; }
+  .kicker { white-space: normal; }
+}

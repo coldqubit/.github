@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>coldqubit · open-source project home for quantum tooling</title>
+<meta name="description" content="coldqubit is an independent, open-source project home for quantum tooling: the missing layers between a quantum circuit and production. Home of shotgate, CI/CD quality gates for quantum circuits.">
+<meta name="theme-color" content="#0C0A12">
+<link rel="canonical" href="https://coldqubit.org/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="coldqubit">
+<meta property="og:title" content="coldqubit · open-source project home for quantum tooling">
+<meta property="og:description" content="The missing layers between a quantum circuit and production.">
+<meta property="og:url" content="https://coldqubit.org/">
+<meta property="og:image" content="https://coldqubit.org/assets/favicon/coldqubit-512.png">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/svg+xml" href="assets/coldqubit-logomark.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/coldqubit-32.png">
+<link rel="apple-touch-icon" href="assets/favicon/coldqubit-180.png">
+<link rel="stylesheet" href="styles/styles.css">
+<link rel="stylesheet" href="styles/site.css">
+</head>
+<body>
+  <nav class="topnav" id="topnav">
+    <div class="wrap topnav-inner">
+      <span class="topnav-brand">
+        <img src="assets/coldqubit-logomark.svg" alt="coldqubit" width="30" height="30">
+        <span class="topnav-name">coldqubit</span>
+      </span>
+      <div class="topnav-links">
+        <a href="#projects">Projects</a>
+        <a href="#governance">Governance</a>
+        <a href="#system">System</a>
+      </div>
+      <a class="gh-link" href="https://github.com/coldqubit" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+        GitHub
+      </a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="lattice"></div>
+    <div class="glow"></div>
+    <div class="wrap hero-inner">
+      <span class="kicker"><span class="tick"></span>Ecosystem · project home</span>
+      <h1>coldqubit</h1>
+      <p class="tagline">The missing <span class="c">layers</span> between a quantum circuit and production.</p>
+
+      <div class="stats">
+        <div class="stat">
+          <div class="l">Active projects</div>
+          <div class="v"><span class="tick"></span>01</div>
+          <div class="s">shotgate · more planned</div>
+        </div>
+        <div class="stat">
+          <div class="l">Maintainers</div>
+          <div class="v">1</div>
+          <div class="s">co-maintainers welcome</div>
+        </div>
+        <div class="stat">
+          <div class="l">License</div>
+          <div class="v">Apache-2.0</div>
+          <div class="s">permissive, OSI-approved</div>
+        </div>
+        <div class="stat">
+          <div class="l">Stage</div>
+          <div class="v">alpha</div>
+          <div class="s">structured to grow</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="section" id="projects">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker"><span class="tick"></span>Projects under coldqubit</span>
+        <h2>One home, growing into an ecosystem.</h2>
+        <p>Every project inherits the shared system, palette, type, and the tile-based mark language, and adds a single glyph and accent. Today there is one.</p>
+      </div>
+
+      <div class="projects">
+        <div class="proj" data-project="shotgate">
+          <div class="proj-top">
+            <img src="assets/shotgate-logomark.svg" alt="shotgate mark">
+            <div>
+              <div class="proj-name">shotgate</div>
+              <div class="proj-role">product 01 · CI/CD quality gates</div>
+            </div>
+            <div class="proj-status">
+              <span class="chip alpha"><span class="dot"></span>alpha</span>
+            </div>
+          </div>
+          <p class="proj-desc">CI/CD quality gates for quantum circuits. Statistically validate the probabilistic output of quantum programs across simulators and real QPUs, as declarative YAML, with drop-in exit-code gating.</p>
+
+          <div class="field-label">Backends</div>
+          <div class="row">
+            <span class="chip working"><span class="dot"></span>local-aer</span>
+            <span class="chip alpha"><span class="dot"></span>ibm</span>
+            <span class="chip planned"><span class="dot"></span>braket</span>
+          </div>
+
+          <div class="exit"><b>exit 0</b> all assertions pass <span class="sep">·</span> <b>1</b> a gate failed <span class="sep">·</span> <b>2</b> bad config</div>
+
+          <div class="proj-links">
+            <a class="plink" href="https://shotgate.coldqubit.org">Site <span class="arr">→</span></a>
+            <a class="plink" href="https://github.com/coldqubit/shotgate">GitHub <span class="arr">→</span></a>
+            <a class="plink" href="https://github.com/coldqubit/shotgate/tree/main/docs">Docs <span class="arr">→</span></a>
+          </div>
+        </div>
+
+        <div class="proj planned-card">
+          <div class="proj-top">
+            <span class="planned-tile">+</span>
+            <div>
+              <div class="proj-name">next project</div>
+              <div class="proj-role">planned</div>
+            </div>
+          </div>
+          <p class="proj-desc">Reuses the shared tile and type, adds one new glyph and accent. The system is built to grow into an ecosystem, not a one-off. Proposals start as an issue under the project home.</p>
+          <div class="proj-links">
+            <a class="plink" href="https://github.com/coldqubit">Watch the home <span class="arr">→</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="wrap">
+      <div class="lower">
+        <div class="panel" id="governance">
+          <span class="kicker"><span class="tick"></span>Project home & governance</span>
+          <h3>One maintainer today, structured to grow.</h3>
+          <p>coldqubit is an independent, open-source project home for quantum tooling, not a company and not a one-person hobby. It is built so that no decision depends on any one person staying available.</p>
+          <ul class="glist">
+            <li><span class="arr">→</span><span>Routine changes land by lazy consensus; substantial or hard-to-reverse changes are recorded as Architecture Decision Records.</span></li>
+            <li><span class="arr">→</span><span>Co-maintainers are welcome, including for a single area such as a backend, the Terraform module, or the docs.</span></li>
+            <li><span class="arr">→</span><span>Container-first reproducibility and written governance keep the project legible to new contributors.</span></li>
+          </ul>
+          <div class="panel-links">
+            <a class="plink" href="https://github.com/coldqubit/shotgate/blob/main/GOVERNANCE.md">Governance <span class="arr">→</span></a>
+            <a class="plink" href="https://github.com/coldqubit/shotgate/blob/main/MAINTAINERS.md">Maintainers <span class="arr">→</span></a>
+            <a class="plink" href="https://github.com/coldqubit/shotgate/blob/main/CONTRIBUTING.md">Contributing <span class="arr">→</span></a>
+          </div>
+        </div>
+
+        <div class="panel" id="system">
+          <span class="kicker"><span class="tick"></span>Shared design system</span>
+          <h3>coldqubit owns the system; products inherit it.</h3>
+          <p>One palette, one type family, one tile-based mark language. The violet tile is the shared base; each product adds a glyph and owns exactly one accent. Cyan is the home's; shotgate runs solar coral.</p>
+          <div class="mark-row">
+            <img src="assets/coldqubit-logomark.svg" alt="coldqubit mark">
+            <div>
+              <div class="mn">coldqubit</div>
+              <div class="md">qubit on a cyan orbit</div>
+            </div>
+            <span class="mr cyan">project home</span>
+          </div>
+          <div class="mark-row">
+            <img src="assets/shotgate-logomark.svg" alt="shotgate mark">
+            <div>
+              <div class="mn">shotgate</div>
+              <div class="md">control dot meeting a gate bar</div>
+            </div>
+            <span class="mr coral">product 01</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <div class="wrap foot-inner">
+      <span>© 2026 coldqubit · Apache-2.0</span>
+      <div class="right">
+        <a href="https://github.com/coldqubit">Project home</a>
+        <a href="https://shotgate.coldqubit.org">shotgate</a>
+        <a href="mailto:info@coldqubit.org">info@coldqubit.org</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/site.js"></script>
+</body>
+</html>
