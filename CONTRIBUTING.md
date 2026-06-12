@@ -25,8 +25,8 @@ where it exists.
 ## Development workflow
 
 Every project under the home is **container-first**: building and testing must work
-through the project's `Makefile` (Podman) with no host installs. Check the project's
-own guide for the exact targets; `make check` is the convention for "what CI runs".
+through containers, with no host toolchain to install. The exact commands belong to
+each project; check its own guide and `README`.
 
 ## Developer Certificate of Origin (DCO)
 

@@ -1,0 +1,9 @@
+version: 2
+updates:
+  # This repository's only workflows are the Pages deploy on the orphan `web`
+  # branch (main carries org docs, no Actions). Keep those actions current.
+  - package-ecosystem: github-actions
+    directory: "/"
+    target-branch: web
+    schedule:
+      interval: weekly

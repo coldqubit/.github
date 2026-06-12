@@ -1,8 +1,8 @@
 blank_issues_enabled: true
 contact_links:
-  - name: shotgate bug or feature
-    url: https://github.com/coldqubit/shotgate/issues/new/choose
-    about: Bugs and feature requests for shotgate belong on its own tracker.
+  - name: Bug or feature in a project
+    url: https://github.com/coldqubit
+    about: Bugs and feature requests belong on that project's own repository, not here. This repository is for the home itself and project proposals.
   - name: Security report (private)
     url: https://github.com/coldqubit/.github/blob/main/SECURITY.md
     about: Never report vulnerabilities in a public issue.

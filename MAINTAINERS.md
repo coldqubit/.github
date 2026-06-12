@@ -29,8 +29,8 @@ documented in each project's `MAINTAINERS.md`). Home maintainers are drawn from 
 project maintainers by the same mechanism: a pull request against this file, confirmed
 by lazy consensus.
 
-Co-maintainers are welcome at every level, including for a single area such as a
-backend, the Terraform module, or the docs.
+Co-maintainers are welcome at every level, including for a single area or surface of
+one project. There is no expectation that a maintainer owns a whole project.
 
 ## Contact
 
