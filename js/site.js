@@ -52,10 +52,10 @@
     set('s-projects-sub', names + ' · more planned');
   }).catch(function () {});
 
-  // Maintainers: count the rows of the "Current maintainers" table in
-  // shotgate's MAINTAINERS.md, the project's source of truth for the roster.
-  cached('https://raw.githubusercontent.com/' + ORG + '/shotgate/main/MAINTAINERS.md', true).then(function (md) {
-    var section = md.split(/^## Current maintainers/m)[1];
+  // Maintainers: count the rows of the "Home maintainers" table in the org's
+  // MAINTAINERS.md (the .github repo), the home's source of truth.
+  cached('https://raw.githubusercontent.com/' + ORG + '/.github/main/MAINTAINERS.md', true).then(function (md) {
+    var section = md.split(/^## Home maintainers/m)[1];
     if (!section) return;
     section = section.split(/^## /m)[0];
     var rows = section.split('\n').filter(function (l) {
