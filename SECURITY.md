@@ -1,8 +1,7 @@
 # Security Policy
 
 This is the **org-wide default** policy for coldqubit projects; a project's own
-`SECURITY.md` always wins where it exists (shotgate has one:
-[SECURITY.md](https://github.com/coldqubit/shotgate/blob/main/SECURITY.md)).
+`SECURITY.md` always wins where it exists.
 
 ## Reporting a vulnerability
 

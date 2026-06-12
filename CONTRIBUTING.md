@@ -1,9 +1,8 @@
 # Contributing to coldqubit projects
 
-Thanks for helping build the missing DevOps layers of quantum computing. This is the
-**org-wide default** guide; a project's own `CONTRIBUTING.md` always wins where it
-exists (shotgate has a detailed one:
-[CONTRIBUTING.md](https://github.com/coldqubit/shotgate/blob/main/CONTRIBUTING.md)).
+Thanks for helping build the missing layers between a quantum circuit and production.
+This is the **org-wide default** guide; a project's own `CONTRIBUTING.md` always wins
+where it exists.
 
 ## Ground rules
 

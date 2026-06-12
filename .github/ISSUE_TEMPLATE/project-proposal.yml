@@ -37,7 +37,7 @@ body:
     id: shape
     attributes:
       label: Proposed shape
-      description: CLI, operator, library, module? How does it fit the quantum × DevOps junction, and how does it compose with the existing projects?
+      description: CLI, operator, library, module? Which layer between a runnable circuit and production does it cover, and how does it compose with the existing projects?
     validations:
       required: true
   - type: dropdown

@@ -7,15 +7,14 @@ projects enter, live under, and leave it. It is intentionally lightweight and ma
 the home's current size: one maintainer today, structured to grow.
 
 Per-project decisions belong to each project. A project may carry its own
-`GOVERNANCE.md` (shotgate [does](https://github.com/coldqubit/shotgate/blob/main/GOVERNANCE.md));
-where it has none, this document applies.
+`GOVERNANCE.md`; where it has none, this document applies.
 
 ## Scope
 
-coldqubit hosts tooling at the quantum × DevOps junction: testing, gating,
-orchestration, observability, policy, infrastructure as code, and the other layers a
-quantum workload needs to ship through a real pipeline. General quantum SDKs,
-algorithms research, and hardware projects are out of scope.
+coldqubit builds the missing layers between a runnable quantum circuit and
+production: testing, gating, orchestration, observability, policy, infrastructure as
+code, and everything else a quantum workload needs to ship through a real pipeline.
+General quantum SDKs, algorithms research, and hardware projects are out of scope.
 
 ## Roles
 
@@ -23,8 +22,7 @@ algorithms research, and hardware projects are out of scope.
 - **Contributors** send pull requests to any project. Start with that project's
   contributing guide, or the org-wide [CONTRIBUTING.md](CONTRIBUTING.md).
 - **Project maintainers** review and merge, cut releases, and steward one project's
-  roadmap. Each project lists its roster (shotgate:
-  [MAINTAINERS.md](https://github.com/coldqubit/shotgate/blob/main/MAINTAINERS.md)).
+  roadmap. Each project lists its own roster.
 - **Home maintainers** steward the org itself: accept and archive projects, hold the
   shared standards, and maintain this repository. The roster is in
   [MAINTAINERS.md](MAINTAINERS.md).
@@ -35,11 +33,10 @@ Routine changes anywhere are decided by **lazy consensus**: a maintainer approve
 merges, and any maintainer may ask to hold a change for discussion before it lands.
 
 Substantial or hard-to-reverse decisions are written down before they happen.
-Project-scoped ones are recorded as Architecture Decision Records in that project
-(shotgate's live in
-[docs/adr/](https://github.com/coldqubit/shotgate/tree/main/docs/adr)). Org-scoped
-ones (accepting a project, archiving one, changing a shared standard or this document)
-are discussed in an issue on this repository and recorded in the merged pull request.
+Project-scoped ones are recorded as Architecture Decision Records in that project.
+Org-scoped ones (accepting a project, archiving one, changing a shared standard or
+this document) are discussed in an issue on this repository and recorded in the
+merged pull request.
 
 While there is a single home maintainer, that maintainer is the final decision-maker.
 As maintainers are added, decisions move to consensus among them, with the lead

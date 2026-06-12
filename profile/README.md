@@ -3,9 +3,9 @@
 **An independent, open-source project home for quantum tooling.**
 The missing layers between a quantum circuit and production.
 
-coldqubit works at the quantum × DevOps junction, building the tooling a world
-needs where quantum workloads ship through real pipelines. It is maintained by
-one person today and open to contributors and co-maintainers.
+coldqubit builds the missing layers between a runnable quantum circuit and
+production, for a world where quantum workloads ship through real pipelines. It is
+maintained by one person today and open to contributors and co-maintainers.
 
 ## Projects
 
@@ -13,11 +13,6 @@ one person today and open to contributors and co-maintainers.
 | --- | --- | --- | --- |
 | 01 | [shotgate](https://github.com/coldqubit/shotgate) | CI/CD quality gates for quantum circuits | alpha |
 | + | [propose a project](https://github.com/coldqubit/.github/issues/new?template=project-proposal.yml) | the home is built for more than one tool | open |
-
-```console
-$ shotgate run examples/bell-state/workflow.yaml
-PASSED · 5/5 assertions · 0.214s · exit 0
-```
 
 ## How the home works
 
