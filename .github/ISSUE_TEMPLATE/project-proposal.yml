@@ -1,0 +1,74 @@
+name: Project proposal
+description: Propose a new project under the coldqubit home. No working code required; a real gap, a credible shape, and a willing maintainer are.
+title: "proposal: <project name>"
+labels: ["project-proposal"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for proposing a project. Proposals are discussed in the open and
+        decided by lazy consensus of the home maintainers, per
+        [GOVERNANCE.md](https://github.com/coldqubit/.github/blob/main/GOVERNANCE.md).
+        Problem first: name the gap before the feature.
+  - type: input
+    id: name
+    attributes:
+      label: Project name
+      description: Lowercase, like the rest of the ecosystem.
+      placeholder: e.g. coolproject
+    validations:
+      required: true
+  - type: input
+    id: gap
+    attributes:
+      label: The gap, in one line
+      description: What is missing between a runnable circuit and production that this closes?
+      placeholder: "e.g. no way to watch shot-count drift across pipeline runs"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Who hits this today, and what do they do instead? Sources and prior art welcome.
+    validations:
+      required: true
+  - type: textarea
+    id: shape
+    attributes:
+      label: Proposed shape
+      description: CLI, operator, library, module? How does it fit the quantum × DevOps junction, and how does it compose with the existing projects?
+    validations:
+      required: true
+  - type: dropdown
+    id: state
+    attributes:
+      label: Current state
+      options:
+        - Idea only
+        - Design written down
+        - Prototype exists
+        - Working code exists elsewhere (would move under the home)
+    validations:
+      required: true
+  - type: textarea
+    id: maintainership
+    attributes:
+      label: Maintainership
+      description: Who would maintain it? Co-maintainers wanted for which areas?
+    validations:
+      required: true
+  - type: checkboxes
+    id: standards
+    attributes:
+      label: Shared standards
+      description: Every project under the home commits to these (GOVERNANCE.md, "Shared standards").
+      options:
+        - label: Apache-2.0 license and DCO sign-off on inbound contributions
+          required: true
+        - label: Container-first reproducibility (build and test with no host setup)
+          required: true
+        - label: Honest status labels (alpha is alpha, planned is planned, validated means measured)
+          required: true
+        - label: The shared design system (tile-based mark, one new glyph, one owned accent)
+          required: true

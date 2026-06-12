@@ -12,17 +12,23 @@ one person today and open to contributors and co-maintainers.
 | | Project | Role | Status |
 | --- | --- | --- | --- |
 | 01 | [shotgate](https://github.com/coldqubit/shotgate) | CI/CD quality gates for quantum circuits | alpha |
-| + | next project | proposals start as an issue | planned |
+| + | [propose a project](https://github.com/coldqubit/.github/issues/new?template=project-proposal.yml) | the home is built for more than one tool | open |
 
-```
+```console
 $ shotgate run examples/bell-state/workflow.yaml
-PASSED · 3/3 assertions · 0.214s · exit 0
+PASSED · 5/5 assertions · 0.214s · exit 0
 ```
+
+## How the home works
+
+- Governance: [GOVERNANCE.md](https://github.com/coldqubit/.github/blob/main/GOVERNANCE.md)
+- Maintainers: [MAINTAINERS.md](https://github.com/coldqubit/.github/blob/main/MAINTAINERS.md)
+- Contributing: [CONTRIBUTING.md](https://github.com/coldqubit/.github/blob/main/CONTRIBUTING.md)
+- Support: [SUPPORT.md](https://github.com/coldqubit/.github/blob/main/SUPPORT.md)
+- Security: [SECURITY.md](https://github.com/coldqubit/.github/blob/main/SECURITY.md)
 
 ## Links
 
 - Project home: <https://coldqubit.org>
-- shotgate: <https://shotgate.coldqubit.org>
-- Governance: [GOVERNANCE.md](https://github.com/coldqubit/shotgate/blob/main/GOVERNANCE.md)
-- Contributing: [CONTRIBUTING.md](https://github.com/coldqubit/shotgate/blob/main/CONTRIBUTING.md)
+- shotgate: <https://shotgate.coldqubit.org> · [docs](https://shotgate.coldqubit.org/docs/)
 - Contact: <info@coldqubit.org>
